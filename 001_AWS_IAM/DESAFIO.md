@@ -1,5 +1,27 @@
 # Desafio: Implementando Segurança com AWS IAM
 
+## Índice
+
+- [Objetivo](#objetivo)
+- [Pré-requisitos](#pré-requisitos)
+- [Cenário](#cenário)
+- [Tasks](#tasks)
+  - [Task 1: Criar Grupos Organizacionais](#task-1-criar-grupos-organizacionais)
+  - [Task 2: Criar Política Customizada para Desenvolvedores](#task-2-criar-política-customizada-para-desenvolvedores)
+  - [Task 3: Criar Política Customizada para Analistas](#task-3-criar-política-customizada-para-analistas)
+  - [Task 4: Anexar Políticas aos Grupos](#task-4-anexar-políticas-aos-grupos)
+  - [Task 5: Criar Usuários e Adicionar aos Grupos](#task-5-criar-usuários-e-adicionar-aos-grupos)
+  - [Task 6: Criar Role para Lambda](#task-6-criar-role-para-lambda)
+  - [Task 7: Testar Permissões](#task-7-testar-permissões)
+  - [Task 8: Implementar MFA (Opcional Avançado)](#task-8-implementar-mfa-opcional-avançado)
+- [Resultados Esperados Finais](#resultados-esperados-finais)
+- [Checklist de Validação](#checklist-de-validação)
+- [Dicas de Troubleshooting](#dicas-de-troubleshooting)
+- [Extras (Opcional)](#extras-opcional)
+- [Próximos Passos](#próximos-passos)
+
+---
+
 ## Objetivo
 
 Criar uma estrutura IAM segura seguindo o princípio do menor privilégio, implementando usuários, grupos, políticas customizadas e roles para diferentes cenários de uso.
