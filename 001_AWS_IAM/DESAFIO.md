@@ -84,7 +84,8 @@ Você foi contratado como DevOps Engineer para configurar o acesso IAM de uma st
         "lambda:UpdateFunctionConfiguration",
         "lambda:DeleteFunction",
         "lambda:InvokeFunction",
-        "lambda:ListFunctions"
+        "lambda:ListFunctions",
+        "lambda:GetFunction"
       ],
       "Resource": "*"
     },
@@ -100,6 +101,15 @@ Você foi contratado como DevOps Engineer para configurar o acesso IAM de uma st
         "arn:aws:s3:::meu-bucket-dev",
         "arn:aws:s3:::meu-bucket-dev/*"
       ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:ListRoles",
+        "iam:GetRole",
+        "iam:PassRole"
+      ],
+      "Resource": "*"
     },
     {
       "Effect": "Deny",
@@ -294,13 +304,13 @@ Ao final do desafio, você deve ter:
 
 ## Checklist de Validação
 
-- [ ] Grupos criados sem políticas inicialmente
-- [ ] Políticas customizadas criadas (não usando apenas políticas AWS gerenciadas)
-- [ ] Políticas seguem o princípio do menor privilégio
-- [ ] Usuários não têm permissões inline, apenas através de grupos
-- [ ] Role Lambda tem trust policy correta
-- [ ] Testes confirmam que permissões estão corretas
-- [ ] Documentação das políticas (comentários no código ou README)
+- [x] Grupos criados sem políticas inicialmente
+- [x] Políticas customizadas criadas (não usando apenas políticas AWS gerenciadas)
+- [x] Políticas seguem o princípio do menor privilégio
+- [x] Usuários não têm permissões inline, apenas através de grupos
+- [x] Role Lambda tem trust policy correta
+- [x] Testes confirmam que permissões estão corretas
+- [x] Documentação das políticas (comentários no código ou README)
 
 ## Dicas de Troubleshooting
 
